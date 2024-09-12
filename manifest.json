@@ -6,5 +6,17 @@
   "action": {
     "default_popup": "hider.html",
     "default_icon": "hider.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "popup.js"
+      ],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://play.google.com/*"
+      ]
+    }
+  ]
 }
